@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_REGISTRY = "docker.io/venkatrepo"
+        DOCKER_REGISTRY = "docker.io/VenkatBheemireddy"
         FRONTEND_IMAGE = "frontend-nodejs"
         BACKEND_IMAGE = "backend-java"
     }
@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/yourrepo/3tier-app.git'
+                git branch: 'main', url: 'https://github.com/VenkatBheemireddy/3tier-app.git'
             }
         }
 
